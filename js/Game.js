@@ -24,4 +24,9 @@ class Game {
       form.display();
     
   }
+  play (){
+    Form.hide();
+    textSize(30);
+    text("Oi Oi Oi ",200,50)
+  }
 }

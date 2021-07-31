@@ -19,4 +19,8 @@ function setup(){
 
 function draw()
 {
+  if(playerCount===2){
+    clear();
+    game.play();  
+  } 
 }

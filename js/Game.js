@@ -15,12 +15,13 @@ class Game {
     });
   }
 
-  start(){
-    if(gameState === 0){
+  async start(){
+  
       player = new Player();
-      player.getCount();
+      
+     player.getCount();
       form = new Form()
       form.display();
-    }
+    
   }
 }

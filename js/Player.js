@@ -9,6 +9,7 @@ class Player {
     var playerCountRef = database.ref('playerCount');
     playerCountRef.on("value",function(data){
       playerCount = data.val();
+      console.log("hola");
     })
   }
 

@@ -31,7 +31,8 @@ hide(){
       playerCount+=1;
       player.index=playerCount
       player.update()
-      player.updateCount(playerCount);
+     // player.updateCount(playerCount);
+      console.log(playerCount);
       this.hula.html("hula " + player.name )
      this.hula.position(130, 160)
     });

@@ -1,7 +1,7 @@
 var canvas, backgroundImage;
 
 var gameState = 0;
-var playerCount;
+var playerCount =0;
 
 var database;
 

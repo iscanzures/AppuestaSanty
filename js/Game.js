@@ -16,12 +16,21 @@ class Game {
   }
 
   async start(){
-  
-      player = new Player();
-      
-     player.getCount();
-      form = new Form()
-      form.display();
+  if(gameState===0){
+    player = new Player();
+
+    var pcr=await database.ref('playerCount').once('value');
+    if(pcr.exists()){
+      playerCount=pcr.val();
+      player.getCount();
+      rayomcqueen=createSprite
+    }
+
+    player.getCount();
+     form = new Form()
+     form.display();
+  }
+
     
   }
   play (){

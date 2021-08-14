@@ -18,7 +18,7 @@ function preload(){
   virgollini=loadImage("../images/car2.png");
   troca=loadImage("../images/car4.png");
   elmaschido=loadImage("../images/car1.png");
-  //pista
+  pista=loadImage("../images/car1.png");
 }
 
 function setup(){
@@ -40,3 +40,4 @@ function draw()
     game.play();  
   }
 }
+                   

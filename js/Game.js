@@ -9,7 +9,7 @@ class Game {
    
   }
 
-  update(state){
+  updateState(state){
     database.ref('/').update({
       gameState: state
     });
@@ -25,8 +25,8 @@ class Game {
     
   }
   play (){
-    Form.hide();
+    form.hide();
     textSize(30);
-    text("Oi Oi Oi ",200,50)
+    text("1, 2, 3 ",200,50)
   }
 }

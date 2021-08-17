@@ -12,13 +12,15 @@ var rayomcqueen,elmasrapido
 var franchisco,virgollini
 var mate,troca
 var sheriff,elmaschido
+var lospits=[]
+var participantes
 
 function preload(){
   elmasrapido=loadImage("../images/car3.png");
   virgollini=loadImage("../images/car2.png");
   troca=loadImage("../images/car4.png");
   elmaschido=loadImage("../images/car1.png");
-  pista=loadImage("../images/car1.png");
+  pista=loadImage("../images/track.png");
 }
 
 function setup(){

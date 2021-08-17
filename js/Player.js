@@ -26,4 +26,11 @@ class Player {
       distance:this.distance
     });
   }
+static getPlayerInfo(){
+  var participantesref=database.ref('players');
+  participantesref.on('value',(data)=>{
+    participantes=data.val();
+  })
+}
+
 }

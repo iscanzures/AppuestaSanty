@@ -26,6 +26,10 @@ class Game {
       rayomcqueen=createSprite(410,700,20,20)
       franchisco=createSprite(550,700,20,20)
 
+      rayomcqueen.visible=false
+      franchisco.visible=false
+
+
       rayomcqueen.addImage(elmasrapido);
       franchisco.addImage(virgollini);
       lospits=[rayomcqueen,franchisco];
@@ -39,6 +43,8 @@ class Game {
     
   }
   play (){
+    rayomcqueen.visible=true
+    franchisco.visible=true
     form.hide();
     textSize(30);
     text("1, 2, 3 ",200,50)
@@ -68,5 +74,17 @@ class Game {
                   camera.position.y = lospits[index-1].y;
                  } }
     }
+    if(keyIsDown(UP_ARROW)&&player.distance<4200){
+   player.distance+=50;
+   player.update();
+    }
+    if(player.distance=4200){
+      gameState=2
+      this.updateState(gameState)
+    }
+    
+  }
+  end(){
+    console.log("finiiiiiiissssssssssssssshh")
   }
 }

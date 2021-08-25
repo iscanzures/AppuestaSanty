@@ -6,12 +6,15 @@ class Form {
     
     this. input = createInput("Name");
     this. button = createButton('Play');
-    
+    this.buttonRRR= createButton('reset')
+
+   this.buttonRRR.hide(); 
   }
 hide(){
   this.title.hide();
   this.input.hide();
   this.button.hide();
+  
 }
   display(){
     
@@ -35,7 +38,12 @@ hide(){
       console.log(playerCount);
       this.hula.html("hula " + player.name )
      this.hula.position(130, 160)
-    });
 
+           //this.buttonRRR.show
+           this.buttonRRR.position(400
+    });
+  this.buttonRRR.mousePressed(()=>{
+    //chasquido de thanos *la maistra noo me lo quizo enzeniar*
+  })
   }
 }

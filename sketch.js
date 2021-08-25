@@ -39,7 +39,12 @@ function draw()
   } 
   if(gameState===1){
     clear();
-    game.play();  
+    game.play(); 
+
   }
+  if(gameState===2){
+    game.end();
+  }
+  drawSprites();
 }
                    
